@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Load model
-model = YOLO("best.pt")  # Assumes your classes are saved in the model
+model = YOLO("best.pt")  
 model.eval()
 
 @app.post("/predict/")
